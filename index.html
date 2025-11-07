@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Removed Google Material Icons link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <img src="assets/menu_icon.png" alt="Menu" class="icon">
+            <div class="search-box">
+                <img src="assets/search_icon.png" alt="Search" class="icon">
+                <input type="text" placeholder="Quick find">
+            </div>
+        </div>
+        <div class="task-count">
+            <img src="assets/check_icon.png" alt="Check Circle" class="icon">
+            <span>30/5</span>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li class="nav-item active">
+                    <img src="assets/inbox_icon.png" alt="Inbox" class="icon">
+                    <span>Inbox</span>
+                    <span class="count">5</span>
+                </li>
+                <li class="nav-item">
+                    <img src="assets/calendar_icon.png" alt="Today" class="icon">
+                    <span>Today</span>
+                    <span class="count">5</span>
+                </li>
+                <li class="nav-item">
+                    <img src="assets/upcoming_icon.png" alt="Upcoming" class="icon">
+                    <span>Upcoming</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Inbox</h1>
+            
+            <ul class="task-list">
+                <li class="task">
+                    <input type="checkbox" id="task1">
+                    <label for="task1">Call Mom</label>
+                </li>
+                <li class="task">
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Buy the new issue of Scientific American</label>
+                </li>
+                <li class="task">
+                    <input type="checkbox" id="task3">
+                    <label for="task3">Return the textbook to Josie</label>
+                </li>
+                <li class="task">
+                    <input type="checkbox" id="task4">
+                    <label for="task4">Buy the new album by Rake</label>
+                </li>
+                <li class="task">
+                    <input type="checkbox" id="task5">
+                    <label for="task5">Buy a gift card for Dad</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
